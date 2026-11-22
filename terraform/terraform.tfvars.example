@@ -1,0 +1,6 @@
+# Replace this with a globally unique S3 bucket name before deploying.
+# Do not use the original name from the PDF if it is already taken.
+bucket_name = "nextwork-website-yourname-unique-suffix"
+
+# The region used in the NextWork project PDF.
+aws_region = "eu-north-1"

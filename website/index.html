@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NextWork — Everyone should be in a job they love</title>
+  <meta name="description" content="Building the best online learning experience to switch careers and upskill. Starting with AWS certifications." />
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; background: #05070d; color: #fff;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      display: flex; flex-direction: column; align-items: center;
+      text-align: center; padding: 2rem 1rem 4rem;
+    }
+    .brand {
+      border: 1px solid #2a2f3a; border-radius: 999px; padding: .5rem 1.25rem;
+      font-weight: 800; letter-spacing: .08em; margin-bottom: 1.5rem;
+    }
+    h1 {
+      margin: 0; font-size: clamp(2.2rem, 8vw, 5.5rem); line-height: .95;
+      font-weight: 900; text-transform: uppercase; letter-spacing: -.02em;
+    }
+    h1 .blue { color: #1f6bff; }
+    .circles { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center; margin: 2rem 0; }
+    .circle {
+      width: 84px; height: 84px; border-radius: 50%; display: grid; place-items: center;
+      font-size: 2rem; background: #141a26; border: 2px solid #232b3d;
+    }
+    .circle.you { background: #111; color: #fff; font-size: 1rem; font-weight: 700; }
+    p.lead { color: #9aa3b2; font-size: 1.15rem; max-width: 42rem; margin: .25rem 0; }
+    p.lead strong { color: #fff; display: block; margin-top: .5rem; }
+    form {
+      margin-top: 2rem; display: flex; gap: .5rem; flex-wrap: wrap; justify-content: center;
+      border: 1px solid #2a2f3a; border-radius: 14px; padding: .5rem;
+    }
+    input {
+      background: transparent; border: 0; color: #fff; padding: .75rem 1rem;
+      min-width: 16rem; font-size: 1rem; outline: none;
+    }
+    button {
+      background: #1f6bff; color: #fff; border: 0; border-radius: 10px;
+      padding: .75rem 1.5rem; font-size: 1rem; font-weight: 700; cursor: pointer;
+    }
+    .note { color: #6b7484; font-size: .85rem; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+  <div class="brand">⬡ NEXTWORK</div>
+
+  <h1>Everyone should be<br />in a <span class="blue">job they love</span> ♡</h1>
+
+  <!-- Placeholder circles: in the original project these were image assets
+       uploaded in the "nextWork-Everyone should be in a job they love/"
+       folder. Replace the emoji placeholders with your own images in
+       website/assets/ and update the markup if you like. -->
+  <div class="circles" aria-hidden="true">
+    <div class="circle">🦥</div><div class="circle">🐰</div><div class="circle">🐨</div>
+    <div class="circle">🦒</div><div class="circle">🐱</div><div class="circle">🐶</div>
+    <div class="circle">🦭</div><div class="circle">🦙</div><div class="circle">🍍</div>
+    <div class="circle">🐕</div><div class="circle you">You?</div>
+  </div>
+
+  <p class="lead">
+    Building the best online learning experience to switch careers and upskill.
+    <strong>Starting with AWS certifications.</strong>
+  </p>
+
+  <!-- Front-end only demo form (no backend). Wire it to your own endpoint
+       or remove it before deploying publicly. -->
+  <form action="#" method="post" onsubmit="return false;">
+    <input type="email" name="email" placeholder="Enter your email" required aria-label="Email address" />
+    <button type="submit">Join waitlist</button>
+  </form>
+  <p class="note">Static demo hosted on Amazon S3 — form does not send data anywhere.</p>
+</body>
+</html>

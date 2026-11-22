@@ -1,0 +1,35 @@
+# Terraform local state, provider cache, and generated plans
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.example.*
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Python-generated files
+__pycache__/
+*.py[cod]
+
+# AWS and other credentials / keys
+.aws/
+.aws-credentials
+credentials
+*.pem
+*.key
+.env
+.env.*
+!.env.example
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
